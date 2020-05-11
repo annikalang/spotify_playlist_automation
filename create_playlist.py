@@ -16,7 +16,13 @@ class CreatePlaylist:
 
 # 3. Create a new playlist on spotify
   def create_playlist(self):
-    pass
+    request_body = json.dumps({
+      "name": "YouTube Liked Videos",
+      "description": "All likes YouTube Videos",
+      "public": True,
+    })
+
+    query = "https://api.spotify.com/v1/users/{}/playlists".format()
 
 # 4. Search for the song
   def get_spotify_uri(self):

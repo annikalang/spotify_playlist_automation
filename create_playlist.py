@@ -22,6 +22,8 @@ class CreatePlaylist:
       "public": True,
     })
 
+    query = "https://api.spotify.com/v1/users/{}/playlists".format()
+
 # 4. Search for the song
   def get_spotify_uri(self):
     pass

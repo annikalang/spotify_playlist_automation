@@ -5,6 +5,7 @@
 # 5. Add this song to the new spotify playlist
 
 import json
+import requests
 
 class CreatePlaylist:
 

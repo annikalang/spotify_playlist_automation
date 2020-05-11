@@ -8,7 +8,7 @@ class CreatePlaylist:
 
 # 1. Log into YouTube
   def __init__(self):
-    pass
+    self.user_id = spotify_user_id
 
 # 2. Grab liked videos
   def get_youtube_client(self):

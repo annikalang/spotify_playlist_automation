@@ -4,6 +4,8 @@
 # 4. Search for the song
 # 5. Add this song to the new spotify playlist
 
+import json
+
 class CreatePlaylist:
 
 # 1. Log into YouTube
@@ -23,6 +25,7 @@ class CreatePlaylist:
     })
 
     query = "https://api.spotify.com/v1/users/{}/playlists".format(self.user_id)
+
 
 # 4. Search for the song
   def get_spotify_uri(self):
